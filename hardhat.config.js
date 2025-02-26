@@ -22,8 +22,8 @@ module.exports = {
       chainId: 31337
     },
     sepolia: {
-      url: "https://eth-sepolia.g.alchemy.com/v2/ns8NeNmR_qe8diYwuGAYfMZLjYLiuSJN",
-      accounts: ['be6b2f0f0efd7a8ea1e2ced58a172359561f4d3e05b7ecf7f39fce94b960c15a'],
+      url: "" ,// rpc url,
+      accounts: []// account private key ,
 },
   },
   paths: {

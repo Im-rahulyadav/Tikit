@@ -101,7 +101,7 @@ contract EventTicket is ERC1155, Ownable, IERC1155Receiver {
         return
             string(
                 abi.encodePacked(
-                    "https://moccasin-adjacent-anaconda-201.mypinata.cloud/ipfs/",
+                    `https://${gateway from pintata}/ipfs/`,
                     eventDetails.cid
                 )
             );

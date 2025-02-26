@@ -11,7 +11,7 @@ const CheckNFTs = () => {
 
     // Get all events
     const { data: allEvents, error: eventsError } = useReadContract({
-        address: '0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE',
+        address: '' ,// contract address ,
         abi: EventTicketABI,
         functionName: 'getAllEvents',
     });
@@ -19,7 +19,7 @@ const CheckNFTs = () => {
     // Read multiple balances at once when we have events
     const { data: balances, error: balancesError } = useReadContracts({
         contracts: allEvents?.map(event => ({
-            address: '0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE',
+            address: '' ,//contract address ,
             abi: EventTicketABI,
             functionName: 'getTicketBalance',
             args: [address, event.eventId],
